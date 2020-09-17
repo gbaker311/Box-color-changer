@@ -1,36 +1,31 @@
-// colors array
-let colors = ["blue", "yellow", "red", "green", "orange"];
+//loops through the five colors on each click event
 
-//get button
-// let button = document.getElementById("button");
-// //Add event listenter
-// button.addEventListener("click", function() {
-//   //randomizer
-//   var randomColor = colors[Math.floor(Math.random() * colors.length)];
-//   //get container
-//   let container = document.getElementById("container");
+// let color = ["blue", "red", "yellow", "green", "orange"];
 
-// //   container.style.background = randomColor;
+// let i = 0;
+
+// document.getElementById("box").addEventListener("click", function() {
+//   i = i < color.length ? ++i : 0;
+//   document.getElementById("box").style.background = color[i];
 // });
 
+//here are multiple mouse events to trigger different colors
 
+document.getElementById("box").addEventListener("mouseover", function() {
+  let color = (document.getElementById("box").style.background = "blue");
+});
+document.getElementById("box").addEventListener("mouseout", function() {
+  let color = (document.getElementById("box").style.background = "red");
+});
 
-document
-  .getElementById("container")
-  .addEventListener("mouseover", changeColorMove);
-function changeColorMove() {
-  this.style.background = "blue";
-}
-document
-  .getElementById("container")
-  .addEventListener("click", changeColorUp);
-function changeColorUp() {
-  this.style.background = "red";
-}
-document
-  .getElementById("container")
-  .addEventListener("dblclick", changeColorUp);
-function changeColorUp() {
-  this.style.background = "green";
-}
-document.getElementById("container").addEventListener("scroll", )
+document.getElementById("box").addEventListener("mouseup", function() {
+  let color = (document.getElementById("box").style.background = "yellow");
+});
+document.getElementById("box").addEventListener("dblclick", function() {
+  let color = (document.getElementById("box").style.background = "green");
+});
+
+document.getElementById("box").addEventListener("wheel", function() {
+  let color = (document.getElementById("box").style.background = "orange");
+});
+
