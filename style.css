@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: gray;
+}
+
+
+#container {
+    height: 500px;
+    width: 500px;
+    background-color: white;
+    
+}
+#box {
+    width: 100px;
+    height: 100px;
+}
